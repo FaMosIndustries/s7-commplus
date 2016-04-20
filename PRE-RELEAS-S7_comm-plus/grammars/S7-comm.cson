@@ -1,4 +1,4 @@
-'scopeName': 'source.bat'
+'scopeName': 'source.s7c'
 'fileTypes': [
   's7comm',
   'S7-comm',
@@ -6,113 +6,43 @@
 ]
 'name': 'S7-comm'
 'patterns': [
-  # single line comments
-  {
-    'match': '(REM|rem).*$|::.*$'
-    'name': 'comment.line.S7-comm'
-  }
-  # label declaration
-  {
-    'captures':
-      '1':
-        'name': 'entity.name.section.S7-comm'
-      '3':
-        'name': 'comment.line.S7-comm'
-    'match': '^(:[^ \\n]*)( |\\n)(.*)'
-  }
-  # user-defined/environment variable substitution
-  {
-    'match': '%%?(~[fdpnxatz]*)?([0-9]+|[A-Za-z][^A-Za-z])'
-    'name': 'variable.other.S7-comm'
-  }
-  # escaped characters
-  {
-    'match': '\\^.|%%'
-    'name': 'constant.character.escape.S7-comm'
-  }
-  # goto label
-  {
-    'captures':
-      '1':
-        'name': 'keyword.control.S7-comm'
-      '2':
-        'name': 'entity.name.section.S7-comm'
-    'match': '\\b(GOTO|goto)\\b(.*)'
-  }
-  # delayed expansion
-  {
-    'name': 'variable.other.S7-comm'
-    'match': '![^!]*!'
-  }
-  # user-defined/environment variable substitution
-  {
-    'match': '%\\*'
-    'name': 'variable.other.S7-comm'
-  }
-
-  # user-defined/environment variable substitution
-  {
-    'begin': '%'
-    'end': '%'
-    'name': 'variable.other.S7-comm'
-  }
-  # set variable
-  {
-    'captures':
-      '1':
-        'name': 'support.function.S7-comm'
-      '2':
+  # mark green
+    {
+      'match': '\\b(?i)(S7 Communication Plus)\\b'
+      'name': 'string.quoted.double.S7-comm'
+    }
+  #  mark blue
+    {
+      'match': '\\b(?i)(Response Set)\\b'
+      'name': 'entity.name.section.S7-comm'
+    }
+  #  mark petrol
+    {
+      'match': '\\b(?i)(value|item|valuelist|nummer|list)\\b'
+      'name': 'support.function.S7-comm'
+    }
+  #  mark violet
+    {
+      'match': '\\b(?i)(data|bitmask|byte|bool|return|int)\\b'
+      'name': 'keyword.control.S7-comm'
+    }
+  #  mark red
+    {
+        'match': '\\b(?i)(debug)\\b'
         'name': 'variable.other.S7-comm'
-      '3':
-        'name': 'keyword.operator.S7-comm'
-    'match': '\\b(SET|set)\\b([^=]+)(=)'
-  }
-  # single-quote strings
-  {
-    'match': '\'[^\']*\''
-    'name' : 'string.quoted.single.S7-comm'
-  }
-  # double-quote strings
-  {
-    'match': '\"[^\"]*\"'
-    'name' : 'string.quoted.double.S7-comm'
-  }
-  # built-in non-control functionality
-  {
-    'match': '\\b(?i)(value|item|valuelist|nummer|list)\\b'
-    'name': 'support.function.S7-comm'
-  }
-  # control keywords
-  {
-    'match': '\\b(?i)(data|bitmask|byte|bool|return|int)\\b'
-    'name': 'keyword.control.S7-comm'
-  }
-  #test error
-  {
-      'match': '\\b(?i)(debug|error)\\b'
-      'name': 'variable.other.S7-comm'
-  }
-  # ERRORLEVEL
-  {
-    'match': '\\b(?i)(errorlevel|exist|in|neq|not)\\b'
-    'name': 'keyword.other.S7-comm'
-  }
-  # ERRORLEVEL
-  {
-    'match': '(?i)(nul)'
-    'name': 'keyword.other.S7-comm'
-  }
-  # operators (pipes, redirects, etc)
-  {
-    'match': '@|\\||[0-9]?>>?|&[0-9]?|\\+|==|nul'
-    'name': 'keyword.operator.S7-comm'
-  }
+    }
+  # error
+    {
+        'match': '\\b(?i)(error)\\b'
+        'name': 'invalid.illegal.S7-comm'
+    }
+
   # constant numbers
-  {
-    'captures':
-      '1':
-        'name': 'constant.numeric.S7-comm'
-    'match': '\\b([0-9]+)\\b'
-    'name': 'meta.numberic.S7-comm'
-  }
+    {
+      'captures':
+        '1':
+          'name': 'constant.numeric.S7-comm'
+      'match': '\\b([0-9]+)\\b'
+      'name': 'meta.numberic.S7-comm'
+    }
 ]
