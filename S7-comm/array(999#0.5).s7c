@@ -1,0 +1,585 @@
+No.     Time           Source                Destination           Protocol Length Datatype   S7 Communication Plus Info
+     23 0.472212000    172.22.49.201         172.22.48.16          S7COMM-PLUS 176    Int,Int,Int,Int,Int Yes                   PDU-Type: [Data] (S7COMM-PLUS reassembled) Op: [Response] Function: [GetMultiVariables] Seq=151
+
+Frame 23: 176 bytes on wire (1408 bits), 176 bytes captured (1408 bits) on interface 0
+Ethernet II, Src: Siemens_13:af:6b (00:1b:1b:13:af:6b), Dst: Vmware_7f:14:9a (00:0c:29:7f:14:9a)
+Internet Protocol Version 4, Src: 172.22.49.201 (172.22.49.201), Dst: 172.22.48.16 (172.22.48.16)
+Transmission Control Protocol, Src Port: 102 (102), Dst Port: 56512 (56512), Seq: 1021, Ack: 234, Len: 122
+TPKT, Version: 3, Length: 122
+ISO 8073/X.224 COTP Connection-Oriented Transport Protocol
+S7 Communication Plus
+    Header, PDU-Type: Data
+    [2 S7COMM-PLUS Fragments (1120 bytes): #21(1009), #23(111)]
+        [Frame: 21, payload: 0-1008 (1009 bytes)]
+        [Frame: 23, payload: 1009-1119 (111 bytes)]
+        [Fragment count: 2]
+        [Reassembled S7COMM-PLUS length: 1120]
+    Data, Op: Response
+        Opcode: Response (0x32)
+        Reserved: 0x0000
+        Function: GetMultiVariables (0x054c)
+        Reserved: 0x0000
+        Sequence number: 151
+        Unknown 1: 0x34
+        Response Set
+            Return value: 0x2027000001820013 - Error code: WarningServiceExecutedWithPartialError (19)
+                Bitmask 0x000000000000ffff - Error code: WarningServiceExecutedWithPartialError (19)
+                Bitmask 0x00000000ffff0000 - OMS line: 386
+                Bitmask 0x000000ff00000000 - Error source: 0x00
+                Bitmask 0x0000ef0000000000 - Generic error code: 0x00
+                Bitmask 0x0000800000000000 - Server error: False
+                Bitmask 0x3fff000000000000 - Debug info: 8231
+                Bitmask 0x4000000000000000 - Error extension: False
+            ValueList
+                Item Value [1]: (Int) Array[99] = 1, 2, 3, 4, 5, 6, 7, 8, 9...
+                    Item Number: 1
+                    Datatype flags: 0x90, Array, Unknown-Flag1
+                        ...1 .... = Array: True
+                        ..0. .... = Addressarray: False
+                        .0.. .... = Sparsearray: False
+                        1... .... = Unknown-Flag1: True
+                    Datatype: Int (0x07)
+                    Array size: 99
+                    Value Array[99] = 1, 2, 3, 4, 5, 6, 7, 8, 9...
+                        Value[1]: 1
+                        Value[2]: 2
+                        Value[3]: 3
+                        Value[4]: 4
+                        Value[5]: 5
+                        Value[6]: 6
+                        Value[7]: 7
+                        Value[8]: 8
+                        Value[9]: 9
+                        Value[10]: 10
+                        Value[11]: 11
+                        Value[12]: 12
+                        Value[13]: 13
+                        Value[14]: 14
+                        Value[15]: 15
+                        Value[16]: 16
+                        Value[17]: 17
+                        Value[18]: 18
+                        Value[19]: 19
+                        Value[20]: 20
+                        Value[21]: 21
+                        Value[22]: 22
+                        Value[23]: 23
+                        Value[24]: 24
+                        Value[25]: 25
+                        Value[26]: 26
+                        Value[27]: 27
+                        Value[28]: 28
+                        Value[29]: 29
+                        Value[30]: 30
+                        Value[31]: 31
+                        Value[32]: 32
+                        Value[33]: 33
+                        Value[34]: 34
+                        Value[35]: 35
+                        Value[36]: 36
+                        Value[37]: 37
+                        Value[38]: 38
+                        Value[39]: 39
+                        Value[40]: 40
+                        Value[41]: 41
+                        Value[42]: 42
+                        Value[43]: 43
+                        Value[44]: 44
+                        Value[45]: 45
+                        Value[46]: 46
+                        Value[47]: 47
+                        Value[48]: 48
+                        Value[49]: 49
+                        Value[50]: 50
+                        Value[51]: 51
+                        Value[52]: 52
+                        Value[53]: 53
+                        Value[54]: 54
+                        Value[55]: 55
+                        Value[56]: 56
+                        Value[57]: 57
+                        Value[58]: 58
+                        Value[59]: 59
+                        Value[60]: 60
+                        Value[61]: 61
+                        Value[62]: 62
+                        Value[63]: 63
+                        Value[64]: 64
+                        Value[65]: 65
+                        Value[66]: 66
+                        Value[67]: 67
+                        Value[68]: 68
+                        Value[69]: 69
+                        Value[70]: 70
+                        Value[71]: 71
+                        Value[72]: 72
+                        Value[73]: 73
+                        Value[74]: 74
+                        Value[75]: 75
+                        Value[76]: 76
+                        Value[77]: 77
+                        Value[78]: 78
+                        Value[79]: 79
+                        Value[80]: 80
+                        Value[81]: 81
+                        Value[82]: 82
+                        Value[83]: 83
+                        Value[84]: 84
+                        Value[85]: 85
+                        Value[86]: 86
+                        Value[87]: 87
+                        Value[88]: 88
+                        Value[89]: 89
+                        Value[90]: 90
+                        Value[91]: 91
+                        Value[92]: 92
+                        Value[93]: 93
+                        Value[94]: 94
+                        Value[95]: 95
+                        Value[96]: 96
+                        Value[97]: 97
+                        Value[98]: 98
+                        Value[99]: 99
+                Item Value [3]: (Int) Array[99] = 201, 202, 203, 204, 205, 206, 207, 208, 209...
+                    Item Number: 3
+                    Datatype flags: 0x90, Array, Unknown-Flag1
+                        ...1 .... = Array: True
+                        ..0. .... = Addressarray: False
+                        .0.. .... = Sparsearray: False
+                        1... .... = Unknown-Flag1: True
+                    Datatype: Int (0x07)
+                    Array size: 99
+                    Value Array[99] = 201, 202, 203, 204, 205, 206, 207, 208, 209...
+                        Value[1]: 201
+                        Value[2]: 202
+                        Value[3]: 203
+                        Value[4]: 204
+                        Value[5]: 205
+                        Value[6]: 206
+                        Value[7]: 207
+                        Value[8]: 208
+                        Value[9]: 209
+                        Value[10]: 210
+                        Value[11]: 211
+                        Value[12]: 212
+                        Value[13]: 213
+                        Value[14]: 214
+                        Value[15]: 215
+                        Value[16]: 216
+                        Value[17]: 217
+                        Value[18]: 218
+                        Value[19]: 219
+                        Value[20]: 220
+                        Value[21]: 221
+                        Value[22]: 222
+                        Value[23]: 223
+                        Value[24]: 224
+                        Value[25]: 225
+                        Value[26]: 226
+                        Value[27]: 227
+                        Value[28]: 228
+                        Value[29]: 229
+                        Value[30]: 230
+                        Value[31]: 231
+                        Value[32]: 232
+                        Value[33]: 233
+                        Value[34]: 234
+                        Value[35]: 235
+                        Value[36]: 236
+                        Value[37]: 237
+                        Value[38]: 238
+                        Value[39]: 239
+                        Value[40]: 240
+                        Value[41]: 241
+                        Value[42]: 242
+                        Value[43]: 243
+                        Value[44]: 244
+                        Value[45]: 245
+                        Value[46]: 246
+                        Value[47]: 247
+                        Value[48]: 248
+                        Value[49]: 249
+                        Value[50]: 250
+                        Value[51]: 251
+                        Value[52]: 252
+                        Value[53]: 253
+                        Value[54]: 254
+                        Value[55]: 255
+                        Value[56]: 256
+                        Value[57]: 257
+                        Value[58]: 258
+                        Value[59]: 259
+                        Value[60]: 260
+                        Value[61]: 261
+                        Value[62]: 262
+                        Value[63]: 263
+                        Value[64]: 264
+                        Value[65]: 265
+                        Value[66]: 266
+                        Value[67]: 267
+                        Value[68]: 268
+                        Value[69]: 269
+                        Value[70]: 270
+                        Value[71]: 271
+                        Value[72]: 272
+                        Value[73]: 273
+                        Value[74]: 274
+                        Value[75]: 275
+                        Value[76]: 276
+                        Value[77]: 277
+                        Value[78]: 278
+                        Value[79]: 279
+                        Value[80]: 280
+                        Value[81]: 281
+                        Value[82]: 282
+                        Value[83]: 283
+                        Value[84]: 284
+                        Value[85]: 285
+                        Value[86]: 286
+                        Value[87]: 287
+                        Value[88]: 288
+                        Value[89]: 289
+                        Value[90]: 290
+                        Value[91]: 291
+                        Value[92]: 292
+                        Value[93]: 293
+                        Value[94]: 294
+                        Value[95]: 295
+                        Value[96]: 296
+                        Value[97]: 297
+                        Value[98]: 298
+                        Value[99]: 299
+                Item Value [5]: (Int) Array[99] = 401, 402, 403, 404, 405, 406, 407, 408, 409...
+                    Item Number: 5
+                    Datatype flags: 0x90, Array, Unknown-Flag1
+                        ...1 .... = Array: True
+                        ..0. .... = Addressarray: False
+                        .0.. .... = Sparsearray: False
+                        1... .... = Unknown-Flag1: True
+                    Datatype: Int (0x07)
+                    Array size: 99
+                    Value Array[99] = 401, 402, 403, 404, 405, 406, 407, 408, 409...
+                        Value[1]: 401
+                        Value[2]: 402
+                        Value[3]: 403
+                        Value[4]: 404
+                        Value[5]: 405
+                        Value[6]: 406
+                        Value[7]: 407
+                        Value[8]: 408
+                        Value[9]: 409
+                        Value[10]: 410
+                        Value[11]: 411
+                        Value[12]: 412
+                        Value[13]: 413
+                        Value[14]: 414
+                        Value[15]: 415
+                        Value[16]: 416
+                        Value[17]: 417
+                        Value[18]: 418
+                        Value[19]: 419
+                        Value[20]: 420
+                        Value[21]: 421
+                        Value[22]: 422
+                        Value[23]: 423
+                        Value[24]: 424
+                        Value[25]: 425
+                        Value[26]: 426
+                        Value[27]: 427
+                        Value[28]: 428
+                        Value[29]: 429
+                        Value[30]: 430
+                        Value[31]: 431
+                        Value[32]: 432
+                        Value[33]: 433
+                        Value[34]: 434
+                        Value[35]: 435
+                        Value[36]: 436
+                        Value[37]: 437
+                        Value[38]: 438
+                        Value[39]: 439
+                        Value[40]: 440
+                        Value[41]: 441
+                        Value[42]: 442
+                        Value[43]: 443
+                        Value[44]: 444
+                        Value[45]: 445
+                        Value[46]: 446
+                        Value[47]: 447
+                        Value[48]: 448
+                        Value[49]: 449
+                        Value[50]: 450
+                        Value[51]: 451
+                        Value[52]: 452
+                        Value[53]: 453
+                        Value[54]: 454
+                        Value[55]: 455
+                        Value[56]: 456
+                        Value[57]: 457
+                        Value[58]: 458
+                        Value[59]: 459
+                        Value[60]: 460
+                        Value[61]: 461
+                        Value[62]: 462
+                        Value[63]: 463
+                        Value[64]: 464
+                        Value[65]: 465
+                        Value[66]: 466
+                        Value[67]: 467
+                        Value[68]: 468
+                        Value[69]: 469
+                        Value[70]: 470
+                        Value[71]: 471
+                        Value[72]: 472
+                        Value[73]: 473
+                        Value[74]: 474
+                        Value[75]: 475
+                        Value[76]: 476
+                        Value[77]: 477
+                        Value[78]: 478
+                        Value[79]: 479
+                        Value[80]: 480
+                        Value[81]: 481
+                        Value[82]: 482
+                        Value[83]: 483
+                        Value[84]: 484
+                        Value[85]: 485
+                        Value[86]: 486
+                        Value[87]: 487
+                        Value[88]: 488
+                        Value[89]: 489
+                        Value[90]: 490
+                        Value[91]: 491
+                        Value[92]: 492
+                        Value[93]: 493
+                        Value[94]: 494
+                        Value[95]: 495
+                        Value[96]: 496
+                        Value[97]: 497
+                        Value[98]: 498
+                        Value[99]: 499
+                Item Value [7]: (Int) Array[99] = 601, 602, 603, 604, 605, 606, 607, 608, 609...
+                    Item Number: 7
+                    Datatype flags: 0x90, Array, Unknown-Flag1
+                        ...1 .... = Array: True
+                        ..0. .... = Addressarray: False
+                        .0.. .... = Sparsearray: False
+                        1... .... = Unknown-Flag1: True
+                    Datatype: Int (0x07)
+                    Array size: 99
+                    Value Array[99] = 601, 602, 603, 604, 605, 606, 607, 608, 609...
+                        Value[1]: 601
+                        Value[2]: 602
+                        Value[3]: 603
+                        Value[4]: 604
+                        Value[5]: 605
+                        Value[6]: 606
+                        Value[7]: 607
+                        Value[8]: 608
+                        Value[9]: 609
+                        Value[10]: 610
+                        Value[11]: 611
+                        Value[12]: 612
+                        Value[13]: 613
+                        Value[14]: 614
+                        Value[15]: 615
+                        Value[16]: 616
+                        Value[17]: 617
+                        Value[18]: 618
+                        Value[19]: 619
+                        Value[20]: 620
+                        Value[21]: 621
+                        Value[22]: 622
+                        Value[23]: 623
+                        Value[24]: 624
+                        Value[25]: 625
+                        Value[26]: 626
+                        Value[27]: 627
+                        Value[28]: 628
+                        Value[29]: 629
+                        Value[30]: 630
+                        Value[31]: 631
+                        Value[32]: 632
+                        Value[33]: 633
+                        Value[34]: 634
+                        Value[35]: 635
+                        Value[36]: 636
+                        Value[37]: 637
+                        Value[38]: 638
+                        Value[39]: 639
+                        Value[40]: 640
+                        Value[41]: 641
+                        Value[42]: 642
+                        Value[43]: 643
+                        Value[44]: 644
+                        Value[45]: 645
+                        Value[46]: 646
+                        Value[47]: 647
+                        Value[48]: 648
+                        Value[49]: 649
+                        Value[50]: 650
+                        Value[51]: 651
+                        Value[52]: 652
+                        Value[53]: 653
+                        Value[54]: 654
+                        Value[55]: 655
+                        Value[56]: 656
+                        Value[57]: 657
+                        Value[58]: 658
+                        Value[59]: 659
+                        Value[60]: 660
+                        Value[61]: 661
+                        Value[62]: 662
+                        Value[63]: 663
+                        Value[64]: 664
+                        Value[65]: 665
+                        Value[66]: 666
+                        Value[67]: 667
+                        Value[68]: 668
+                        Value[69]: 669
+                        Value[70]: 670
+                        Value[71]: 671
+                        Value[72]: 672
+                        Value[73]: 673
+                        Value[74]: 674
+                        Value[75]: 675
+                        Value[76]: 676
+                        Value[77]: 677
+                        Value[78]: 678
+                        Value[79]: 679
+                        Value[80]: 680
+                        Value[81]: 681
+                        Value[82]: 682
+                        Value[83]: 683
+                        Value[84]: 684
+                        Value[85]: 685
+                        Value[86]: 686
+                        Value[87]: 687
+                        Value[88]: 688
+                        Value[89]: 689
+                        Value[90]: 690
+                        Value[91]: 691
+                        Value[92]: 692
+                        Value[93]: 693
+                        Value[94]: 694
+                        Value[95]: 695
+                        Value[96]: 696
+                        Value[97]: 697
+                        Value[98]: 698
+                        Value[99]: 699
+                Item Value [9]: (Int) Array[99] = 801, 802, 803, 804, 805, 806, 807, 808, 809...
+                    Item Number: 9
+                    Datatype flags: 0x90, Array, Unknown-Flag1
+                        ...1 .... = Array: True
+                        ..0. .... = Addressarray: False
+                        .0.. .... = Sparsearray: False
+                        1... .... = Unknown-Flag1: True
+                    Datatype: Int (0x07)
+                    Array size: 99
+                    Value Array[99] = 801, 802, 803, 804, 805, 806, 807, 808, 809...
+                        Value[1]: 801
+                        Value[2]: 802
+                        Value[3]: 803
+                        Value[4]: 804
+                        Value[5]: 805
+                        Value[6]: 806
+                        Value[7]: 807
+                        Value[8]: 808
+                        Value[9]: 809
+                        Value[10]: 810
+                        Value[11]: 811
+                        Value[12]: 812
+                        Value[13]: 813
+                        Value[14]: 814
+                        Value[15]: 815
+                        Value[16]: 816
+                        Value[17]: 817
+                        Value[18]: 818
+                        Value[19]: 819
+                        Value[20]: 820
+                        Value[21]: 821
+                        Value[22]: 822
+                        Value[23]: 823
+                        Value[24]: 824
+                        Value[25]: 825
+                        Value[26]: 826
+                        Value[27]: 827
+                        Value[28]: 828
+                        Value[29]: 829
+                        Value[30]: 830
+                        Value[31]: 831
+                        Value[32]: 832
+                        Value[33]: 833
+                        Value[34]: 834
+                        Value[35]: 835
+                        Value[36]: 836
+                        Value[37]: 837
+                        Value[38]: 838
+                        Value[39]: 839
+                        Value[40]: 840
+                        Value[41]: 841
+                        Value[42]: 842
+                        Value[43]: 843
+                        Value[44]: 844
+                        Value[45]: 845
+                        Value[46]: 846
+                        Value[47]: 847
+                        Value[48]: 848
+                        Value[49]: 849
+                        Value[50]: 850
+                        Value[51]: 851
+                        Value[52]: 852
+                        Value[53]: 853
+                        Value[54]: 854
+                        Value[55]: 855
+                        Value[56]: 856
+                        Value[57]: 857
+                        Value[58]: 858
+                        Value[59]: 859
+                        Value[60]: 860
+                        Value[61]: 861
+                        Value[62]: 862
+                        Value[63]: 863
+                        Value[64]: 864
+                        Value[65]: 865
+                        Value[66]: 866
+                        Value[67]: 867
+                        Value[68]: 868
+                        Value[69]: 869
+                        Value[70]: 870
+                        Value[71]: 871
+                        Value[72]: 872
+                        Value[73]: 873
+                        Value[74]: 874
+                        Value[75]: 875
+                        Value[76]: 876
+                        Value[77]: 877
+                        Value[78]: 878
+                        Value[79]: 879
+                        Value[80]: 880
+                        Value[81]: 881
+                        Value[82]: 882
+                        Value[83]: 883
+                        Value[84]: 884
+                        Value[85]: 885
+                        Value[86]: 886
+                        Value[87]: 887
+                        Value[88]: 888
+                        Value[89]: 889
+                        Value[90]: 890
+                        Value[91]: 891
+                        Value[92]: 892
+                        Value[93]: 893
+                        Value[94]: 894
+                        Value[95]: 895
+                        Value[96]: 896
+                        Value[97]: 897
+                        Value[98]: 898
+                        Value[99]: 899
+                Terminating Item/List
+            ErrorValueList
+        Integrity part
+            Integrity Id: 300
+            Digest Length: 32
+            Packet Digest: 7a0619ddfdfc9ca9dabee695257c504c54dae644793ab19e...
+    Trailer, PDU-Type: Data

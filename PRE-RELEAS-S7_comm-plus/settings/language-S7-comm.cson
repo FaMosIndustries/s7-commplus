@@ -1,0 +1,3 @@
+'.source.S7-comm':
+  'editor':
+    'commentStart': 'REM '

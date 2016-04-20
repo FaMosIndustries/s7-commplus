@@ -1,0 +1,31 @@
+{
+  "name": "S7-Comm-Protocolv2_for Atom",
+  "version": "0.0.1",
+  "description": "S7-Comm-Protocol in Atom",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaMosIndustries/s7-commplus.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "s7-comm-plus\n\nPrerelease for s7 comm plus protocol this is just a file for intern using may i create a release but i'm not shure if this is possible\n\nfrendly kinds FaMo alias Dakota\n\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/FaMosIndustries/s7-commplus/issues"
+  },
+  "homepage": "https://github.com/FaMosIndustries/s7-commplus/blob/master/README.md",
+  "_id": "S7-Comm-Protocol@0.0.1",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
